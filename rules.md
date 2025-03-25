@@ -32,3 +32,5 @@
 * `alert http any any -> any any (msg:"SQL Injection"; flow:established,to_server; content:"SELECT"; nocase; http_uri; pcre:"/(\%27)|(\')|(\-\-)|(\%23)|(#)/i"; classtype:web-application-attack; sid:1000031;)`
 
 * `alert http any any -> any any (msg:"Command Injection Attempt"; content:"/bin/bash"; sid:1000041;)`
+
+* Netbox - pravidlo na pokus o pristup z User PC do administracie switchov/routrov ?
