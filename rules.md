@@ -1,3 +1,7 @@
+VLAN 100 (PROD_S1 - PROD_S8):
+* `alert ip !10.0.100.0/24 any -> 10.0.100.0/24 any (msg:"Traffic to management VLAN 100 from outside"; sid:1100001; rev:1;)`
+
+--
 
 * `alert icmp any any -> 8.8.8.8 any (msg:"ICMP Ping 8.8.8.8"; itype:8; sid:1000001; rev:1;)`
   * Príklad: `ping 8.8.8.8`
