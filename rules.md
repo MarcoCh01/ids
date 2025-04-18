@@ -1,7 +1,7 @@
 VLAN 100 (PROD_S1 - PROD_S8):
 * `alert ip !10.0.100.0/24 any -> 10.0.100.0/24 any (msg:"Traffic to management VLAN 100 from outside"; sid:1100001; rev:1;)`
 
-* `alert ip ![10.0.100.0/24, 10.0.90.0/24] any -> 10.0.100.0/24 any (msg:"Traffic to management VLAN 100 (from outside VLAN 100 & 90)"; sid:1100001; rev:1;)`
+* `alert ip ![10.0.100.0/24, 10.0.90.0/24] any -> 10.0.100.0/24 any (msg:"Traffic to management VLAN 100 (from outside VLAN 100 & 90)"; sid:1100011; rev:1;)`
 
 * `alert ip 10.0.220.0/24 any -> 10.0.100.0/24 any (msg:"Traffic to management VLAN 100 from VLAN 220 (users)"; sid:1100002; rev:1;)`
 
